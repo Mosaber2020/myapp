@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Check out</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <body>
+      <center>
+    <ul class="nav nav-pills justify-content-center " style="background-color: bisque;">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign Up</a>
+        </li>
+      </ul>
+      <br>
+      
+      <form action="file:///C:/Users/Lenovo/Desktop/project%20web/Home%20page.html">
+      <table>
+        <thead>
+            <tr>
+              <h2 class="h2">Check out</h2>
+            </tr>
+          </thead>
+          <tr>
+            <td>
+              <h4 class="h2">number of hours :</h4>
+            </td>
+            <td>
+              <input type = "text"  size = "2"  id = "time1"  style="margin-top: 10px;" >
+          </tr>
+          <tr>
+              <td>
+                  <h4 class="h2">cost of one pos :</h4>
+              </td>
+              <td>
+
+                <input type = "text"  size = "2"  id = "cost0" 
+                onfocus = "this.blur();" style="margin-top: 10px;" value="10" /> $
+
+ 
+              </td>
+          </tr>
+          <tr>
+            <td>
+
+                <p>
+                    <input type = "button"  value = "Total Cost" 
+                           onclick = "calccost();" />
+                    <input type = "text"  size = "5"  id = "ss" 
+                           onfocus = "this.blur();" />
+                  </p>
+
+
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+               <hr width="100%">
+            </td>
+          </tr>
+          
+          <tr>
+              <td>
+                  <h3 class="h3"> Enter Your card number:</h3>
+              </td>
+              <td>
+                  <input type="text">
+              </td>
+          </tr>
+
+
+          
+      </table>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">finish</button>
+    </form>
+
+    <script>
+      document.getElementById("time").innerHTML=localStorage.getItem("realtime");
+
+      function calccost(){
+        var t1=document.getElementById("time1").value;
+        var t2=document.getElementById("cost0").value;
+        var t3=t2*t1;
+
+document.getElementById("ss").value=t3;
+}
+    </script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      </center>
+  </body>
+</html>
